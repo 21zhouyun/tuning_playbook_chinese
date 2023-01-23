@@ -1,6 +1,6 @@
-# Deep Learning Tuning Playbook
+# 深度学习调参手册
 
-*This is not an officially supported Google product.*
+*这并非正式的谷歌产品*
 
 **Varun Godbole<sup>&dagger;</sup>, George E. Dahl<sup>&dagger;</sup>, Justin Gilmer<sup>&dagger;</sup>, Christopher J. Shallue<sup>&Dagger;</sup>, Zachary Nado<sup>&dagger;</sup>**
 
@@ -11,8 +11,8 @@
 
 ## Table of Contents
 
--   [Who is this document for?](#who-is-this-document-for)
--   [Why a tuning playbook?](#why-a-tuning-playbook)
+-   [本文是为谁而写?](#本文档是为谁而写？)
+-   [为什么需要调参手册?](#why-a-tuning-playbook)
 -   [Guide for starting a new project](#guide-for-starting-a-new-project)
     -   [Choosing the model architecture](#choosing-a-model-architecture)
     -   [Choosing the optimizer](#choosing-the-optimizer)
@@ -42,19 +42,13 @@
 -   [Citing](#citing)
 -   [Contributing](#contributing)
 
-## Who is this document for?
+## 本文档是为谁而写?
 
-This document is for engineers and researchers (both individuals and teams)
-interested in **maximizing the performance of deep learning models**. We assume
-basic knowledge of machine learning and deep learning concepts.
+本文档适用于想要**最大化深度学习模型表现**的工程师和研究人员（包括个人和团队）。我们假定读者对基础的机器学习和深度学习有一定了解。
 
-Our emphasis is on the **process of hyperparameter tuning**. We touch on other
-aspects of deep learning training, such as pipeline implementation and
-optimization, but our treatment of those aspects is not intended to be complete.
+我们在文档中主要讲解了**超参数优化**的过程。我们对于深度学习的其他方面也有所涉猎，如流程的实现和优化。但是我们对于这些方面的讲解并不追求完整。
 
-We assume the machine learning problem is a supervised learning problem or
-something that looks a lot like one (e.g. self-supervised). That said, some of
-the prescriptions in this document may also apply to other types of problems.
+我们假设所处理的机器学习问题是一个监督学习问题或者类似的问题（如自监督学习）。不过，文中的一些方法可能也适用于其他类型的问题
 
 ## Why a tuning playbook?
 
